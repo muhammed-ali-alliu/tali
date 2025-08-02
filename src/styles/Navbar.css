@@ -1,0 +1,44 @@
+/* Outer wrapper takes full width */
+.navbar-wrapper {
+    width: 100%;
+    background-color: #ffffff; /* or your desired color */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Inner navbar centers content */
+  .navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logo image styling */
+  .navbar-logo img {
+    height: 40px; /* adjust as needed */
+  }
+  
+  /* Navigation links */
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .navbar-links li a {
+    text-decoration: none;
+    color: #0d3559; /* or your blue */
+    font-weight: 500;
+  }
+  
+  /* Call to action button */
+  .cta-button {
+    background-color: #0d3559; /* blue */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+  }
+  

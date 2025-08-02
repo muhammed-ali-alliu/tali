@@ -1,0 +1,32 @@
+.contact-cta {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .contact-cta h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #0d2b4d;
+  }
+  
+  .contact-cta p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .contact-cta a.cta-button {
+    background-color: #083b66;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-cta a.cta-button:hover {
+    background-color: #062c4f;
+  }
+  
