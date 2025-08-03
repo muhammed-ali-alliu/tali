@@ -4,6 +4,7 @@ import Services from './components/Services';
 import HowItWorks from './components/HowItWorks';
 import ContactCTA from './components/ContactCTA';
 import Footer from './components/Footer';
+import ContactForm from './components/ContactForm';
 
 function App() {
   return (
@@ -13,10 +14,8 @@ function App() {
       <Services />
       <HowItWorks />
       <ContactCTA />
+      <ContactForm />
       <Footer />
-      <main>
-        {/* HeroSection will go here next */}
-      </main>
     </>
   );
 }

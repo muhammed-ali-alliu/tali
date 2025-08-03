@@ -1,44 +1,99 @@
-/* Outer wrapper takes full width */
-.navbar-wrapper {
-    width: 100%;
-    background-color: #ffffff; /* or your desired color */
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-  }
-  
-  /* Inner navbar centers content */
-  .navbar {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  /* Logo image styling */
+.navbar {
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #002b50;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #004d7a;
+}
+
+.cta-button {
+  background-color: white;
+  color: #002b50;
+  border: 2px solid #002b50;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: #002b50;
+  color: white;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+
+.navbar-logo img {
+  height: 70px;
+  width: auto;
+}
+
+@media (min-width: 768px) {
   .navbar-logo img {
-    height: 40px; /* adjust as needed */
+    height: 90px;
+    width: 100px;
   }
-  
-  /* Navigation links */
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
   .navbar-links {
-    list-style: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    display: none;
+  }
+
+  .navbar-links.open {
     display: flex;
-    gap: 2rem;
   }
-  
-  .navbar-links li a {
-    text-decoration: none;
-    color: #0d3559; /* or your blue */
-    font-weight: 500;
-  }
-  
-  /* Call to action button */
-  .cta-button {
-    background-color: #0d3559; /* blue */
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    font-weight: 600;
-  }
-  
+}
